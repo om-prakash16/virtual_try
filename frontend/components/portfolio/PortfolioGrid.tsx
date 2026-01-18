@@ -27,14 +27,14 @@ const portfolioItems = [
         id: "lumina-smart-home",
         title: "Lumina Smart Home",
         category: "Product Design",
-        image: "https://images.unsplash.com/photo-1558002038-1091a1661116?q=80&w=2671&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2673&auto=format&fit=crop",
         aiAssisted: true,
     },
     {
         id: "velvet-vine",
         title: "Velvet & Vine",
         category: "Packaging",
-        image: "https://images.unsplash.com/photo-1632515904536-4d5162f4e3c6?q=80&w=2670&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=2670&auto=format&fit=crop",
         aiAssisted: false,
     },
     {
@@ -113,6 +113,13 @@ const portfolioItems = [
         title: "Modern Villa Viz",
         category: "3D Art",
         image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2600&auto=format&fit=crop",
+        aiAssisted: true,
+    },
+    {
+        id: "azure-villa",
+        title: "Azure Villa Estate",
+        category: "Real Estate",
+        image: "https://images.unsplash.com/photo-1600596542815-e32c0d540e2d?q=80&w=2600&auto=format&fit=crop",
         aiAssisted: true,
     },
 ];

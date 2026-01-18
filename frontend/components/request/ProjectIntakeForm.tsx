@@ -131,10 +131,10 @@ export function ProjectIntakeForm() {
                                             <SelectValue placeholder="Select Range" />
                                         </SelectTrigger>
                                         <SelectContent>
-                                            <SelectItem value="small">$1k - $3k</SelectItem>
-                                            <SelectItem value="medium">$3k - $8k</SelectItem>
-                                            <SelectItem value="large">$8k - $15k</SelectItem>
-                                            <SelectItem value="enterprise">$15k+</SelectItem>
+                                            <SelectItem value="small">₹80k - ₹2.5L</SelectItem>
+                                            <SelectItem value="medium">₹2.5L - ₹6L</SelectItem>
+                                            <SelectItem value="large">₹6L - ₹12L</SelectItem>
+                                            <SelectItem value="enterprise">₹12L+</SelectItem>
                                         </SelectContent>
                                     </Select>
                                 </div>

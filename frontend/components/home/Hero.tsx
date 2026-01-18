@@ -73,44 +73,7 @@ export function Hero() {
                     </Button>
                 </motion.div>
 
-                {/* Hero Visual - High Quality Dashboard Mockup */}
-                <motion.div
-                    initial={{ opacity: 0, y: 100, rotateX: 20 }}
-                    animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                    transition={{ duration: 1, delay: 0.4, type: "spring", stiffness: 40 }}
-                    style={{ perspective: "1000px" }}
-                    className="relative w-full max-w-6xl z-20"
-                >
-                    <div className="relative rounded-xl border border-white/20 bg-black/5 backdrop-blur-2xl shadow-2xl overflow-hidden aspect-[16/10] md:aspect-[21/9]">
-                        {/* Mockup Top Bar */}
-                        <div className="absolute top-0 left-0 right-0 h-10 border-b border-white/10 flex items-center px-4 gap-2 bg-white/5">
-                            <div className="w-3 h-3 rounded-full bg-red-500/50" />
-                            <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
-                            <div className="w-3 h-3 rounded-full bg-green-500/50" />
-                        </div>
-
-                        {/* Realistic UI Image */}
-                        <div className="absolute inset-x-0 bottom-0 top-10 bg-background/50">
-                            <img
-                                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2674&auto=format&fit=crop"
-                                alt="Dashboard Interface"
-                                className="w-full h-full object-cover opacity-90"
-                            />
-                            {/* Floating Elements for Depth */}
-                            <motion.div
-                                animate={{ y: [0, -10, 0] }}
-                                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-                                className="absolute top-10 right-10 w-64 h-40 bg-background/80 backdrop-blur-xl border border-white/20 rounded-lg shadow-2xl p-4 hidden md:block"
-                            >
-                                <div className="h-2 w-20 bg-primary/20 rounded mb-2" />
-                                <div className="h-20 w-full bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-md" />
-                            </motion.div>
-                        </div>
-                    </div>
-
-                    {/* Glow Effect behind mockup */}
-                    <div className="absolute -inset-4 bg-gradient-to-r from-indigo-500 to-purple-500 opacity-20 blur-3xl -z-10 rounded-[3rem]" />
-                </motion.div>
+                {/* Hero Visual Removed per user request */}
             </div>
 
             {/* Fade to next section */}

@@ -21,14 +21,14 @@ export function PortfolioCard({ item, onClick }: PortfolioCardProps) {
     return (
         <div
             onClick={onClick}
-            className="group block mb-6 break-inside-avoid relative cursor-pointer"
+            className="group/card block mb-6 break-inside-avoid relative cursor-pointer"
         >
-            <div className="relative rounded-xl overflow-hidden bg-muted">
+            <div className="relative rounded-xl overflow-hidden bg-muted transform-gpu">
                 {/* Image */}
                 <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-auto object-cover transition-transform duration-500 group-hover/card:scale-105 transform-gpu"
                 />
 
                 {/* AI Badge */}

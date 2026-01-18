@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { NavLinks } from "./NavLinks";
 import { MobileNav } from "./MobileNav";
@@ -10,6 +11,8 @@ import { Button } from "@/components/ui/button";
 
 export function Navbar() {
     const [scrolled, setScrolled] = React.useState(false);
+
+    const pathname = usePathname();
 
     React.useEffect(() => {
         const handleScroll = () => {
@@ -20,10 +23,15 @@ export function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // Function to check if we should show the navbar
+    if (pathname && pathname.startsWith('/dashboard')) {
+        return null;
+    }
+
     return (
         <header
             className={cn(
-                "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out border-b border-transparent overflow-x-hidden",
+                "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out border-b border-transparent",
                 scrolled
                     ? "bg-background/80 backdrop-blur-md border-border shadow-sm py-2"
                     : "bg-transparent py-4"

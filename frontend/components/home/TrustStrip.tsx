@@ -9,12 +9,12 @@ const stats = [
 ];
 
 const companies = [
-    { name: "Adobe", logo: "https://upload.wikimedia.org/wikipedia/commons/2/20/Adobe_Creative_Cloud_logo.svg" },
-    { name: "Figma", logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" },
-    { name: "Notion", logo: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" },
-    { name: "Webflow", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Webflow_logo_2023.svg/2560px-Webflow_logo_2023.svg.png" },
-    { name: "Vercel", logo: "https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" },
-    { name: "Stripe", logo: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" }
+    { name: "Adobe", logo: "https://cdn.simpleicons.org/adobe" },
+    { name: "Figma", logo: "https://cdn.simpleicons.org/figma" },
+    { name: "Notion", logo: "https://cdn.simpleicons.org/notion" },
+    { name: "Webflow", logo: "https://cdn.simpleicons.org/webflow" },
+    { name: "Vercel", logo: "https://cdn.simpleicons.org/vercel" },
+    { name: "Stripe", logo: "https://cdn.simpleicons.org/stripe" }
 ];
 
 export function TrustStrip() {

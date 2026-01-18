@@ -12,8 +12,10 @@
  */
 import { Hero } from "@/components/home/Hero";
 import { TrustStrip } from "@/components/home/TrustStrip";
+import { ServiceCategoryRail } from "@/components/portfolio/ServiceCategoryRail";
 import { PortfolioPreview } from "@/components/home/PortfolioPreview";
 import { AILabPreview } from "@/components/home/AILabPreview";
+import { RemoveBgPreview } from "@/components/home/RemoveBgPreview";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { ServicesSnapshot } from "@/components/home/ServicesSnapshot";
 import { Testimonials } from "@/components/home/Testimonials";
@@ -27,8 +29,10 @@ export default function Home() {
     <main className="flex min-h-screen flex-col bg-background overflow-x-hidden w-full">
       <Hero />
       <TrustStrip />
+      <ServiceCategoryRail />
       <PortfolioPreview />
       <AILabPreview />
+      <RemoveBgPreview />
       <HowItWorks />
       <ServicesSnapshot />
       <Testimonials />

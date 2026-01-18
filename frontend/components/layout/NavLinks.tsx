@@ -48,14 +48,14 @@ const portfolioItems = [
 
 export function NavLinks() {
     return (
-        <NavigationMenu className="hidden lg:flex">
+        <NavigationMenu className="hidden lg:flex" delayDuration={0}>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <Link href="/" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink asChild>
+                        <Link href="/" className={navigationMenuTriggerStyle()}>
                             Home
-                        </NavigationMenuLink>
-                    </Link>
+                        </Link>
+                    </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
@@ -76,43 +76,51 @@ export function NavLinks() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <Link href="/ai-lab" legacyBehavior passHref>
-                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-gradient-to-r from-indigo-500/10 to-purple-500/10 hover:from-indigo-500/20 hover:to-purple-500/20 text-indigo-500 hover:text-indigo-600 font-medium")}>
+                    <NavigationMenuLink asChild>
+                        <Link href="/ai-lab" className={cn(navigationMenuTriggerStyle(), "bg-gradient-to-r from-indigo-500/10 to-purple-500/10 hover:from-indigo-500/20 hover:to-purple-500/20 text-indigo-500 hover:text-indigo-600 font-medium")}>
                             AI Design Lab
-                        </NavigationMenuLink>
-                    </Link>
+                        </Link>
+                    </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <Link href="/services" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink asChild>
+                        <Link href="/tools/remove-bg" className={cn(navigationMenuTriggerStyle(), "bg-gradient-to-r from-pink-500/10 to-rose-500/10 hover:from-pink-500/20 hover:to-rose-500/20 text-pink-500 hover:text-pink-600 font-medium")}>
+                            Remove Background
+                        </Link>
+                    </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                    <NavigationMenuLink asChild>
+                        <Link href="/services" className={navigationMenuTriggerStyle()}>
                             Services
-                        </NavigationMenuLink>
-                    </Link>
+                        </Link>
+                    </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <Link href="/resources" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink asChild>
+                        <Link href="/resources" className={navigationMenuTriggerStyle()}>
                             Learn
-                        </NavigationMenuLink>
-                    </Link>
+                        </Link>
+                    </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <Link href="/about" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink asChild>
+                        <Link href="/about" className={navigationMenuTriggerStyle()}>
                             About
-                        </NavigationMenuLink>
-                    </Link>
+                        </Link>
+                    </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <Link href="/contact" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink asChild>
+                        <Link href="/contact" className={navigationMenuTriggerStyle()}>
                             Contact
-                        </NavigationMenuLink>
-                    </Link>
+                        </Link>
+                    </NavigationMenuLink>
                 </NavigationMenuItem>
 
             </NavigationMenuList>
@@ -127,8 +135,9 @@ const ListItem = React.forwardRef<
     return (
         <li>
             <NavigationMenuLink asChild>
-                <a
+                <Link
                     ref={ref}
+                    href={props.href || "#"}
                     className={cn(
                         "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
                         className
@@ -139,7 +148,7 @@ const ListItem = React.forwardRef<
                     <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         {children}
                     </p>
-                </a>
+                </Link>
             </NavigationMenuLink>
         </li>
     );

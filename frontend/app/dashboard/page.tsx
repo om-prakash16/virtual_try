@@ -15,8 +15,8 @@ export default function DashboardPage() {
         <DashboardShell>
             <div className="flex items-center justify-between mb-8">
                 <div>
-                    <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
-                    <p className="text-muted-foreground">Welcome back, here's an overview of your creative workspace.</p>
+                    <h1 className="text-3xl font-bold tracking-tight">Dashboard Overview</h1>
+                    <p className="text-muted-foreground">Welcome back, Annu. Here's what's happening in your studio.</p>
                 </div>
                 <div className="flex gap-2">
                     <Link href="/request">

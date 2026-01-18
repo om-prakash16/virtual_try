@@ -78,9 +78,9 @@ export function ContactForm() {
                                     <SelectValue placeholder="Select range" />
                                 </SelectTrigger>
                                 <SelectContent>
-                                    <SelectItem value="small">&lt; $500</SelectItem>
-                                    <SelectItem value="medium">$500 - $2000</SelectItem>
-                                    <SelectItem value="large">$2000+</SelectItem>
+                                    <SelectItem value="small">&lt; ₹40,000</SelectItem>
+                                    <SelectItem value="medium">₹40,000 - ₹1,50,000</SelectItem>
+                                    <SelectItem value="large">₹1,50,000+</SelectItem>
                                     <SelectItem value="custom">Custom / Not sure</SelectItem>
                                 </SelectContent>
                             </Select>

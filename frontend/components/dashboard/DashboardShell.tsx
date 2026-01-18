@@ -12,7 +12,8 @@ import {
     X,
     Sparkles,
     MessageSquare,
-    User
+    User,
+    Image as ImageIcon
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -23,8 +24,9 @@ interface DashboardShellProps {
 
 const navItems = [
     { href: "/dashboard", label: "Overview", icon: LayoutDashboard },
-    { href: "/portfolio", label: "My Projects", icon: FolderOpen },
+    { href: "/dashboard/projects", label: "My Projects", icon: FolderOpen },
     { href: "/ai-lab", label: "AI Design Lab", icon: Sparkles },
+    { href: "/tools/remove-bg", label: "Remove Background", icon: ImageIcon },
     { href: "/request", label: "New Request", icon: MessageSquare },
     { href: "/dashboard/settings", label: "Settings", icon: Settings },
 ];
@@ -67,11 +69,11 @@ export function DashboardShell({ children }: DashboardShellProps) {
                 <div className="p-4 border-t border-border">
                     <div className="flex items-center gap-3 px-4 py-3 rounded-lg bg-muted/50 mb-4">
                         <div className="h-8 w-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-bold text-xs">
-                            JD
+                            AN
                         </div>
                         <div className="flex-1 min-w-0">
-                            <p className="text-sm font-medium truncate">John Doe</p>
-                            <p className="text-xs text-muted-foreground truncate">john@example.com</p>
+                            <p className="text-sm font-medium truncate">Annu</p>
+                            <p className="text-xs text-muted-foreground truncate">annu@designstudio.com</p>
                         </div>
                     </div>
                     <Button variant="ghost" className="w-full justify-start text-muted-foreground hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/20">

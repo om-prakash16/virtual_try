@@ -13,8 +13,8 @@ import { Textarea } from "@/components/ui/textarea";
 // Mock Services
 const services = [
     { id: "discovery", title: "Discovery Call", duration: "15 min", price: "Free", description: "Initial chat to discuss your project needs and see if we're a good fit." },
-    { id: "project-review", title: "Project Review", duration: "45 min", price: "$150", description: "Deep dive into your existing project with actionable feedback." },
-    { id: "consultation", title: "Strategic Consultation", duration: "60 min", price: "$250", description: "Comprehensive strategy session for branding or product roadmap." },
+    { id: "project-review", title: "Project Review", duration: "45 min", price: "₹12,000", description: "Deep dive into your existing project with actionable feedback." },
+    { id: "consultation", title: "Strategic Consultation", duration: "60 min", price: "₹20,000", description: "Comprehensive strategy session for branding or product roadmap." },
 ];
 
 export function BookingScheduler() {

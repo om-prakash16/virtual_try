@@ -16,7 +16,7 @@ const plans = [
     {
         title: "AI-Only Design",
         description: "Instant generation for quick ideas and mockups. Best for brainstorming.",
-        price: "$29",
+        price: "₹2,500",
         features: [
             "Unlimited AI Generations",
             "High-Res Downloads",
@@ -29,7 +29,7 @@ const plans = [
     {
         title: "AI + Manual Refinement",
         description: "AI speed with professional designer polish. Best for small businesses.",
-        price: "$199",
+        price: "₹15,000",
         features: [
             "Everything in AI-Only",
             "Expert Designer Review",
@@ -43,7 +43,7 @@ const plans = [
     {
         title: "Fully Custom Design",
         description: "Bespoke branding for serious businesses. Complete creative direction.",
-        price: "$999",
+        price: "₹80,000",
         features: [
             "Dedicated Senior Designer",
             "Complete Brand Identity",

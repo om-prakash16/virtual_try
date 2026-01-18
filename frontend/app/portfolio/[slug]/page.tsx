@@ -243,6 +243,79 @@ const categoryConfig: Record<string, any> = {
         ctaTitle: "Need professional print-ready designs?",
         ctaPrimary: "Request Print Design",
         ctaPrimaryLink: "/request"
+    },
+    // --- New Categories ---
+    "instagram": {
+        title: "Instagram content that builds community",
+        description: "Static posts, carousels, and stories designed to maximize engagement and follower growth.",
+        intro: "Your feed is your portfolio. We create consistent, high-value visual content that turns scrollers into followers.",
+        tags: ["Social Media", "Carousels", "Stories", "Reels Covers"],
+        ctaTitle: "Ready to upgrade your Instagram feed?",
+        ctaPrimary: "Get Social Pack",
+        ctaPrimaryLink: "/request"
+    },
+    "presentation": {
+        title: "Decks that win investors and clients",
+        description: "Pitch decks, sales presentations, and keynote slides that communicate value clearly and persuasively.",
+        intro: "Don't let bad design kill good ideas. We structure your narrative and visualize your data for maximum impact.",
+        tags: ["Pitch Decks", "Keynote", "PowerPoint", "Data Viz"],
+        ctaTitle: "Need a winning pitch deck?",
+        ctaPrimary: "Request Presentation Design",
+        ctaPrimaryLink: "/request"
+    },
+    "poster": {
+        title: "Posters that command attention",
+        description: "Large-format designs for events, promotions, and advertising that stand out in any environment.",
+        intro: "A great poster captures the essence of a message in a single glance. We design for clarity, hierarchy, and bold visual impact.",
+        tags: ["Event Posters", "Advertising", "Large Format"],
+        ctaTitle: "Planning an event or campaign?",
+        ctaPrimary: "Request Poster Design",
+        ctaPrimaryLink: "/request"
+    },
+    "resume": {
+        title: "Resumes that get you hired",
+        description: "Professional, ATS-friendly resume and CV designs that highlight your skills and experience.",
+        intro: "Your resume is your personal brand document. We create clean, professional layouts that help you stand out to recruiters.",
+        tags: ["CV Design", "Personal Branding", "Professional"],
+        ctaTitle: "Want to land your dream job?",
+        ctaPrimary: "Get Custom Resume",
+        ctaPrimaryLink: "/request"
+    },
+    "email": {
+        title: "Emails that get opened and clicked",
+        description: "Newsletter templates and promotional email designs that look great on every device.",
+        intro: "Email marketing has the highest ROI. We design responsive, beautiful emails that drive conversions and engagement.",
+        tags: ["Newsletters", "Marketing", "Responsive"],
+        ctaTitle: "Need better performing emails?",
+        ctaPrimary: "Request Email Design",
+        ctaPrimaryLink: "/request"
+    },
+    "logo": {
+        title: "Logos that define your brand",
+        description: "Distinctive, memorable logos that serve as the cornerstone of your visual identity.",
+        intro: "A logo is more than a mark; it's a trust signal. We craft timeless identities that scale from business cards to billboards.",
+        tags: ["Identity", "Symbol", "Wordmark", "Branding"],
+        ctaTitle: "Starting a new brand?",
+        ctaPrimary: "Request Logo Design",
+        ctaPrimaryLink: "/request"
+    },
+    "flyer": {
+        title: "Flyers that drive local action",
+        description: "Effective promotional flyers for events, sales, and local marketing campaigns.",
+        intro: "Get the word out effectively. We design flyers that communicate your offer clearly and motivate people to act.",
+        tags: ["Marketing", "Print", "Events"],
+        ctaTitle: "Need to promote an event?",
+        ctaPrimary: "Request Flyer Design",
+        ctaPrimaryLink: "/request"
+    },
+    "brochure": {
+        title: "Brochures that tell your full story",
+        description: "Multi-page booklets and tri-folds that educate customers and showcase your offerings in detail.",
+        intro: "When you need to go deeper, a brochure is the perfect medium. We organize complex information into beautiful, readable layouts.",
+        tags: ["Marketing", "Print", "Catalog"],
+        ctaTitle: "Need a company brochure?",
+        ctaPrimary: "Request Brochure Design",
+        ctaPrimaryLink: "/request"
     }
 };
 

@@ -9,3 +9,5 @@ python-dotenv
 httpx
 pydantic-settings
 email-validator
+rembg
+pillow
